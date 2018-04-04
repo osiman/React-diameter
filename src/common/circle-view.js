@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Circle extends Component {
 
-
+  // default values
   constructor() {
     super();
     this.state = { 
@@ -11,16 +11,14 @@ class Circle extends Component {
     };
   }
 
-  
+  // // when circle button on click -> fetch data & user data
   circleClick = () => {
-    console.log(this.props.postId);
-    var apiUrl = "https://jsonplaceholder.typicode.com/posts";
+    const apiUrl = "https://jsonplaceholder.typicode.com/posts";
     fetch(apiUrl)
     .then((response) => {
         return response.json()
     })
     .then((json) => {
-        console.log(json[this.props.postId]);
         this.setState({
             data: json[this.props.postId],
             loading: false,
@@ -30,12 +28,13 @@ class Circle extends Component {
   }
 
   render() { 
-
+    // if data is not displayed on the element
     if (this.state.loading) {
       return (<div>Loading..</div>)
     }
 
-    var letterStyle = {
+    // calculated values and style
+    let letterStyle = {
         width: this.props.areaValue + 'px',
         height:this.props.areaValue + 'px'
     };

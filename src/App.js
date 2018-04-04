@@ -4,7 +4,8 @@ import './App.css';
 
 
 class App extends Component {
-
+  
+  // default values
   constructor() {
     super();
     this.state = { 
@@ -14,6 +15,7 @@ class App extends Component {
     };
   }
 
+  // when input is changed & validate
   changeValue=(e)=> {
     const enterValue = (e.target.validity.valid) ? e.target.value : this.state.enterValue;
     if(enterValue > 100 ) {
@@ -31,6 +33,7 @@ class App extends Component {
     e.preventDefault();
   }
  
+  // when button on click -> send required parameter
   calculateClick = () => {
     const enterValue = this.state.enterValue;
     this.setState({
@@ -40,6 +43,7 @@ class App extends Component {
     });
   }
 
+  // render element 
   render() {
     return (
       <div className="App">
