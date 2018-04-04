@@ -1,0 +1,72 @@
+body {
+  background: #eee;
+  font-family: sans-serif;
+}
+.App {
+  padding: 20px;
+}
+.form {
+  padding: 20px;
+  width: 240px;
+  border: 1px solid #a2a2a2;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 8px #bbb, inset 0 0 0 1px white;
+  box-shadow: 0 2px 8px #bbb, inset 0 0 0 1px #dedede;
+  background: #fff;
+}
+.inputNumber {
+  padding: 3px 6px; 
+  width: 100px; 
+  font-weight: bold; 
+  font-size: 22px; 
+  float: left;;
+  outline: 0; 
+  border: 1px solid #444; 
+  background: #f4f4f4; 
+  color: black; 
+  border-radius: 1px; 
+  text-align: center; 
+  box-shadow: 0 2px 8px #bbb, inset 0 0 0 1px white;
+}
+button {
+  background: #bdbdbd;
+  padding: 3px 6px;
+  width: 115px;
+  font-weight: bold;
+  font-size: 16px;
+  height: 35px;
+  float: left;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 8px #bbb, inset 0 0 0 1px #868686;
+}
+button.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+button.active{
+  background: #19b38c;
+  cursor: pointer;
+}
+.circle {
+  background-color: #da0606;
+  border-radius: 50%;
+	border:1px solid #e2e2e2;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-shadow: 0 2px 8px #bbb, inset 0 0 0 1px #868686;
+  box-shadow: 0 2px 8px #313131, inset 0 0 0 1px #909090;
+}
+.detail-text {
+  background-color: #1b1b1b;
+  padding: 10px;
+  position: absolute;
+  top: 20%;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+.detail-text h3{
+  font-size: 14px;
+}
